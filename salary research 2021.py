@@ -1,6 +1,5 @@
 # data manipulation
 import pandas as pd
-import numpy as np
 
 # plotly 
 import plotly.express as px
