@@ -15,7 +15,7 @@ from datetime import date
 
 # read excel file
 # estimated run time = 2.21s
-data = pd.read_excel('OEWS_2021_Cross_Industry_Only.xlsx')
+data = pd.read_excel('OEWS_2021_Data.xlsx')
 
 # cleaning
 data['A_MEDIAN'] = [i if type(i) == int else np.nan for i in data["A_MEDIAN"]]
