@@ -18,8 +18,8 @@ from datetime import date
 data = pd.read_excel('OEWS_2021_Data.xlsx')
 
 # cleaning
-data['A_MEDIAN'] = [i if type(i) == int else np.nan for i in data["A_MEDIAN"]]
-data['TOT_EMP'] = [i if type(i) == int else np.nan for i in data["TOT_EMP"]]
+data['A_MEDIAN'] = [i if type(i) == int else None for i in data["A_MEDIAN"]]
+data['TOT_EMP'] = [i if type(i) == int else None for i in data["TOT_EMP"]]
 data = data.rename(columns = {'A_MEDIAN':'Annual Median Income', 'TOT_EMP':'Total Employment'})
 
 
